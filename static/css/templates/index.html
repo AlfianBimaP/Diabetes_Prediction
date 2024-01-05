@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Pendeteksi Diabetes</title>
+{% endblock %}
+
+{% block body %}
+
+
+<div class="content" style="background-color: crimson;">
+    
+    <div class="container">
+      <div class="row align-items-stretch no-gutters contact-wrap">
+        <div class="col-md-12">
+          <div class="form h-100">
+            <h3>Pendeteksi Penyakit Diabetes</h3>
+            <form class="mb-5" action="/" method="POST" id="contactForm" >
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Banyak Melahirkan *</label>
+                  <input type="text" class="form-control" name="melahirkan" id="melahirkan" placeholder="Masukan Banyak Melahirkan">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Kadar Glukosa *</label>
+                  <input type="text" class="form-control" name="glukosa" id="glukosa"  placeholder="Masukan Kadar Glukosa">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Tekanan Darah *</label>
+                  <input type="text" class="form-control" name="darah" id="darah" placeholder="Masukan Tekanan Darah">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Tebal Kulit *</label>
+                  <input type="text" class="form-control" name="kulit" id="kulit"  placeholder="Masukan Tebal Kulit">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Kadar Insulin *</label>
+                  <input type="text" class="form-control" name="insulin" id="insulin" placeholder="Masukan Kadar Insulin">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Bmi *</label>
+                  <input type="text" class="form-control" name="bmi" id="bmi"  placeholder="Masukan Bmi">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Riwayat Diabetes *</label>
+                  <input type="text" class="form-control" name="diabetes" id="diabetes" placeholder="Masukan Riwayat Diabetes">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Umur *</label>
+                  <input type="text" class="form-control" name="umur" id="umur"  placeholder="Masukan Umur">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="submit" value="Cek" class="btn btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+
+            <div id="form-message-warning mt-4"></div> 
+            <div id="form-message-success">
+              Your message was sent, thank you!
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}
